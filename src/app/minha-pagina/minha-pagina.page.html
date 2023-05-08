@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Minha Página 2</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- Conteúdo da sua página -->
+  <ion-list>
+    <ion-card *ngFor="let item of items">
+      <ion-card-header>
+        <ion-card-title>{{ item.title }}</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        {{ item.description }}
+      </ion-card-content>
+      <ion-card-header>
+        {{item.cbc}}
+      </ion-card-header>
+    </ion-card>
+  </ion-list>
+
+</ion-content>

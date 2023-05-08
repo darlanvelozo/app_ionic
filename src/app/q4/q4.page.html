@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Pesquisa</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- Conteúdo da sua página -->
+  <ion-toolbar>
+    <ion-searchbar animated placeholder="Pesquisar" (ionChange)="buscar($event)"></ion-searchbar>
+  </ion-toolbar>
+
+</ion-content>

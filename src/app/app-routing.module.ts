@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
+
 const routes: Routes = [
   {
     path: 'home',
@@ -10,6 +11,14 @@ const routes: Routes = [
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'
+  },
+  {
+    path: 'minha-pagina',
+    loadChildren: () => import('./minha-pagina/minha-pagina.module').then( m => m.MinhaPaginaPageModule)
+  },
+  {
+    path: 'q4',
+    loadChildren: () => import('./q4/q4.module').then( m => m.Q4PageModule)
   },
 ];
 
